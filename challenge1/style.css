@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: bas;
 }
 
 .container {
@@ -32,5 +32,5 @@ body {
 }
 
 .intro-content {
-  max-width: 50%;
+  width: 50%;
 }
