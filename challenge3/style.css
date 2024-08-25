@@ -51,7 +51,7 @@ button {
     font-size: 1rem;
     padding: 0.5em 2em;
     border-radius: 100px;
-    border: 0px ;
+    border: 0px;
     background-color: var(--bg-button);
     font-family: var(--font);
     font-weight: 600;
