@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --alfa: "Alfa Slab One";
+    --outfit: "Outfit";
+    --bevan: "Bevan";
+    --bg: #23424A;
+    --button-font: #136C72;
+    --button-bg: #38CFD9;
+    --white: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: var(--outfit);
+}
+
+.intro {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 8rem 0;
+}
+
+.text {
+    width: 60%;
+}
+
+.text h1 {
+    font-family: var(--bevan);
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    margin-bottom: 3rem;
+}
+
+.text button {
+    background-color: var(--button-bg);
+    color: var(--bg);
+    width: 30%;
+    padding: 0.8em;
+    border-radius: 50px;
+    border: 0px var(--button-bg);
+    font-family: var(--outfit);
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text button:hover, button:focus {
+    opacity: 0.75;
+}
