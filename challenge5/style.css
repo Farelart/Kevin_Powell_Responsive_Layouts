@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --alfa: "Alfa Slab One";
+    --outfit: "Outfit";
+    --bevan: "Bevan";
+    --dk-green: #23424A;
+    --dk-gray: #3A3A3A;
+    --mid-green: #136C72;
+    --light-green: #38CFD9;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html  {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--outfit);
+}
+
+.hero {
+    background-color: var(--dk-green);
+    color: var(--white);
+    padding: 8rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 1.3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__text {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero__img {
+    width: 32%;
+    border: 1px solid red;
+    align-self: flex-start;
+}
+
+.hero__text h1 {
+    font-family: var(--bevan);
+    font-size: 3rem;
+}
+
+.hero__text a {
+    margin-top: 2rem;
+    text-decoration: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 800;
+    background-color: var(--light-green);
+    color: var(--dk-gray);
+    width: 30%;
+    padding: 0.6em;
+    border-radius: 1000px;
+}
+
+.content {
+    padding: 3.2rem 0;
+}
+
+.second {
+    font-size: 1.15rem;
+}
+
+.content-1 {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-1 h2 {
+    color: var(--mid-green);
+    font-size: 2.5rem;
+}
+
+.content-2 {
+    width: 32%;
+    padding: 2em;
+    background-color: var(--mid-green);
+    color: var(--white);
+    text-align: center;
+}
+
+.content-2 .sub {
+    margin: 3em auto;
+}
+
+.content-2 .sub h2 {
+    margin-bottom: 1em;
+}
