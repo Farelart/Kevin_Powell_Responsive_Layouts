@@ -122,3 +122,47 @@ body {
 .content-2 .sub h2 {
     margin-bottom: 1em;
 }
+
+header {
+    background-color: var(--mid-green);
+    padding: 1rem 0;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav__link--button {
+    background-color: var(--white);
+    color: var(--mid-green);
+    padding: 0.5rem 1rem;
+    border-radius: 10000px;
+}
+
+.nav__link--right {
+    /* text-align: right; */
+    margin-left: auto;
+}
+
