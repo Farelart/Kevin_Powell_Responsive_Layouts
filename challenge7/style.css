@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --alfa: "Alfa Slab One";
+    --bevan: "Bevan";
+    --outfit: "Outfit";
+    --beige: #F3EED9;
+    --brown:  #824936;
+    --gray:  #222C2A;
+    --white: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--outfit);
+}
+
+.hero {
+    background-color: var(--beige);
+    padding: 12rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container .hero__text {
+    text-align: center;
+}
+
+.container .hero__text h1 {
+    font-family: var(--bevan);
+    font-size: 3.5rem;
+    color: var(--brown);
+}
+
+.container .hero__text p {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.content {
+    padding: 4.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.primary__content h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: var(--bevan);
+    font-size: 2rem;
+    color: var(--brown);
+}
+
+.primary__content .primary__content--text {
+    display: flex;
+    gap: 3rem;
+}
+
+.primary__content .primary__content--text p {
+    width: 50%;
+}
+
+.second__content {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.second__content .content {
+    display: flex;
+    gap: 3rem;
+}
+
+.second__content .content .second__content--text {
+    width: 50%;
+}
+
+.second__content .content .second__content--text h2 {
+    margin-bottom: 1.5rem;
+    font-family: var(--bevan);
+    font-size: 2rem;
+    color: var(--beige);
+}
+
+.second__content .content .second__content--img {
+    width: 50%;
+    border: 0px;
+}
+
+.second__content--img img {
+    border: 0px;
+}
+
+.third__content {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.third__content .content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+.third__content .content .third__content--text {
+    width: 50%;
+}
+
+.third__content .content .third__content--text h2 {
+    margin-bottom: 1.5rem;
+    font-family: var(--bevan);
+    font-size: 2rem;
+    color: var(--beige);
+}
+
+.third__content .content .third__content--img {
+    width: 50%;
+    border: 0px;
+}
+
+.third__content--img img {
+    border: 0px;
+}
+
