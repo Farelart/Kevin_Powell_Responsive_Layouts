@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ca23cc636.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <section class="navbar">
+            <div class="menu layout">
+                <a href="" class="logo"><img src="img/logo.svg" alt=""></a>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav__links layout">
+                <li class="nav__item"><a href="">Home</a></li>
+                <li class="nav__item"><a href="">About</a></li>
+                <li class="nav__item"><a href="">Contact</a></li>
+                <li class="nav__item"><a href="">Sign in</a></li>
+                <li class="nav__item "><a href="" class="nav__item--bg">Sign up</a></li>
+            </ul> 
+        </section>
+    </nav>
+
+    <main class="main__visible">
+        <section class="first__part">
+            <article class="hero">
+                <h1 class="hero__title">Responsive layouts <span>don't have to be a struggle</span></h1>
+                <div class="hero__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="">I want to learn</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="second__part">
+            <div class="content">
+                <article>
+                    <h2>Mobile-first</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Utenim ad minim veniam.
+                    </p>
+                </article>
+                <article class="margin">
+                    <h2>Efficient</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Utenim ad minim veniam.
+                    </p>
+                </article>
+                <article>
+                    <h2>Done right</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Utenim ad minim veniam.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="third-part">
+            <div class="content">
+                <section class="part1">
+                    <h2>It doesn't have to be so hard</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                        enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                    <img src="img/the-image.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                        enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </section>
+
+                <section class="part2">
+                    <article>
+                        <h3>Break it down</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                        </p>
+                    </article>
+                    <article class="margin">
+                        <h3>Work your way up</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Break it down</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__visible">
+        <section class="content">
+            <h2>Just scratching the surface</h2>
+            <div class="links">
+                <article class="width">
+                    <h4>About our company</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </article>
+                <article>
+                    <h4>Getting around</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>Other things</h4>
+                    <ul>
+                        <li><a href="">Lorem Ipsum</a></li>
+                        <li><a href="">Dolor</a></li>
+                        <li><a href="">Sit amet</a></li>
+                        <li><a href="">Consectetur</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>And more</h4>
+                    <ul>
+                        <li><a href="">Lorem Ipsum</a></li>
+                        <li><a href="">Dolor</a></li>
+                        <li><a href="">Sit amet</a></li>
+                        <li><a href="">Consectetur</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<script>
+    const menu = document.querySelector(".fa-bars");
+    const nav__links = document.querySelector(".nav__links");
+    const main__visible = document.querySelector(".main__visible");
+    const footer__visible = document.querySelector(".footer__visible");
+
+    menu.addEventListener('click', () => {
+        nav__links.classList.toggle("nav__visible");
+        main__visible.classList.toggle("main__invisible");
+        footer__visible.classList.toggle("footer__invisible");
+
+        if (menu.classList.contains("fa-bars")) {
+            menu.classList.remove("fa-bars");
+            menu.classList.add("fa-xmark");
+        }
+        else {
+            menu.classList.remove("fa-xmark");
+            menu.classList.add("fa-bars");
+        }
+    });
+</script>
+</html>
